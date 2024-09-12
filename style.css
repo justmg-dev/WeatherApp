@@ -1,0 +1,77 @@
+*{ margin: 0; padding: 0; box-sizing: border-box;}
+
+body{
+    font-family: 'montserrat', sans-serif;
+    color: lightgray;
+    background-color: #757a80;
+    height: 100vh;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.header { padding: 50px 20px 30px 20px}
+.header h1 {
+    font-size: 50px;
+    color: greenyellow;
+    text-shadow: 1px 3px rgba(0, 0, 0, .2);
+}
+.header input {
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 2px solid greenyellow;
+    text-align: center;
+    font-size: 16px;
+    color: lightgray;
+}
+::-webkit-input-placeholder {
+    color: white;
+}
+
+.city {
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
+}
+.temp-desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.temp {
+    font-size: 34px;
+    font-weight: 700;
+}
+.describe {
+    font-weight: 400;
+    font-size: 1em;
+    text-shadow: 1px 2px 5px rgba(255, 255, 255, .5);
+}
+
+
+@keyframes slideUp {
+    from {
+      transform: translateY(100px) translateX(-100px); /* Başlangıç noktası (aşağıda ve solda) */
+    }
+    to {
+      transform: translateY(0) translateX(0); /* Bitiş noktası (normal konum) */
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
